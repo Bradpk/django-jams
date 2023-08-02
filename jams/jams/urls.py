@@ -20,9 +20,13 @@ from rest_framework import routers
 from app import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+# router.register(r'users', views.UserViewSet)
+# router.register(r'groups', views.GroupViewSet)
 router.register(r'song', views.SongViewSet)
+router.register(r'artist', views.ArtistViewSet)
+router.register(r'album', views.AlbumViewSet)
+router.register(r'genre', views.GenreViewSet)
+router.register(r'user', views.UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
