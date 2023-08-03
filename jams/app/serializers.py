@@ -23,7 +23,7 @@ class ArtistSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class SongSerializer(serializers.ModelSerializer):
-    artist = ArtistSerializer(many=True)
+    # artist = ArtistSerializer(many=True)
     class Meta:
         model = Song
         fields = "__all__"
