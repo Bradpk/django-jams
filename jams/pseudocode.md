@@ -30,10 +30,10 @@ Create a music library database/API with Django using this template(Docker) as a
 CRUD
 
  C - Create 
-(POST) Used to retrieve data from the server. 
+(POST) Used to create a new resource on the server.
 
 R - Read 
-(GET) Used to create a new resource on the server.
+(GET) Used to retrieve data from the server. 
 
 U - Update 
 (PUT) Used to update an existing resource.
