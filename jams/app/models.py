@@ -4,15 +4,30 @@ from django.db import models
 class Song(models.Model):
     title = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.title
+
 class Artist(models.Model):
     name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
 
 class Album(models.Model):
     name = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.name
+
 class Genre(models.Model):
     type = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.type
 
 class User(models.Model):
     email = models.CharField(max_length=200)
     username = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.username
