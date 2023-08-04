@@ -32,6 +32,7 @@ class Genre(models.Model):
 class User(models.Model):
     email = models.CharField(max_length=200)
     username = models.CharField(max_length=200)
+    #playlist = models.ForeignKey('Playlist', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.username
