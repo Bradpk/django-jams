@@ -29,7 +29,7 @@ Create a music library database/API with Django using this template(Docker) as a
 
 CRUD
 
- C - Create 
+C - Create 
 (POST) Used to create a new resource on the server.
 
 R - Read 
@@ -45,76 +45,47 @@ D - Delete
 
 FILES: 
 
- Models:
 
- Song
- Artist 
- Album 
- Genre 
- User 
+Models:
 
- Song_Genre
- Song_Artist
- Song_Album 
- User_Playlist 
- User_Playlist_Songs
+Song:
+title = CharField
+artist = ManyToManyField
+album = ForeignKey
+genre = ManyToManyField
 
+Artist:
+name = CharField
 
- Serializers: 
+Album:
+name = CharField
 
- Song
- Artist 
- Album 
- Genre 
- User 
+Genre:
+type = CharField
 
- Song_Genre
- Song_Artist
- Song_Album 
- User_Playlist 
- User_Playlist_Songs
+User:
+email = CharField
+username = CharField
 
 
- Models:
 
- Song
- Artist 
- Album 
- Genre 
- User 
+Serializers: 
 
- Song_Genre
- Song_Artist
- Song_Album 
- User_Playlist 
- User_Playlist_Songs
+Artist 
+Album 
+Genre 
+User 
+Song
 
- Views: 
 
- Song
- Artist 
- Album 
- Genre 
- User 
+Views: 
 
- Song_Genre
- Song_Artist
- Song_Album 
- User_Playlist 
- User_Playlist_Songs
+SongViewSet
+ArtistViewSet
+Album ViewSet
+Genre ViewSet
+User ViewSet
 
- URLS: 
-
- Song
- Artist 
- Album 
- Genre 
- User 
-
- Song_Genre
- Song_Artist
- Song_Album 
- User_Playlist 
- User_Playlist_Songs
+ 
 
 
